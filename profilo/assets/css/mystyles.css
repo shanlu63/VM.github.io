@@ -1,0 +1,64 @@
+/* À titre d'exemple */
+footer.footer  {
+ color: #888;
+}
+
+/* positionne le bouton Gitlab */
+div.source {
+  margin-top: 1em;
+  float: right;
+  font-size: smaller;
+}
+
+/* style le bouton Gitlab */
+div.source a {
+  /* color: #aaa; */
+  background-color: #eee;
+  padding: 3px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* anime le bouton Gitlab */
+div.source a:hover {
+  color: #fff;
+  background-color: var(--accent-color);
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Déplace le sommaire (TOC) sur le côté pour être accessible pendant la lecture */
+#markdown-toc {
+  position: fixed;
+  top: 16em;
+  left: 10px;
+  padding-right: 10px;
+}
+
+/* Ajoute le titre "Sommaire" à la TOC */
+#markdown-toc::before {
+  display: block;
+  margin-left: -2em;
+  margin-bottom: 1em;
+  content: "Sommaire";
+}
+
+/* S'assure que le Sommaire disparaisse sur des écrans mobiles */
+@media only screen and (max-width: 1138px)  {
+  #markdown-toc {
+    display: none;
+  }
+}
+
+/* Crée un block Warning coloré */
+.warning {
+  padding: 1em;
+  background-color: var(--oc-orange-2);
+  border: 1px solid var(--oc-orange-3);
+}
+
+/* Ajoute un ombré autour des images */
+img.shadow {
+  box-shadow: 5px 5px 15px 5px #999;
+}
